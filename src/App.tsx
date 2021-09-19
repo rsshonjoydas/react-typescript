@@ -1,3 +1,4 @@
+import Button from "./components/Button";
 import Greet from "./components/Greet";
 import Heading from "./components/Heading";
 import Oscar from "./components/Oscar";
@@ -37,6 +38,12 @@ const App = () => {
       <Oscar>
         <Heading>Oscar goes to Leonardo Dicpario</Heading>
       </Oscar>
+      <hr />
+      <Button
+        handleClick={(event, id) => {
+          console.log("Button clicked", event, id);
+        }}
+      />
     </>
   );
 };
