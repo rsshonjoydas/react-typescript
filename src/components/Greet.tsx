@@ -1,0 +1,12 @@
+type GreetProps = {
+  name: string;
+};
+const Greet = (props: GreetProps) => {
+  return (
+    <div>
+      <h2>welcome {props.name}! You have 10 unread messages.</h2>
+    </div>
+  );
+};
+
+export default Greet;
