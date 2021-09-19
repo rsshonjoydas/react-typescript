@@ -11,6 +11,7 @@ import Oscar from "./components/Oscar";
 import Person from "./components/Person";
 import PersonList from "./components/PersonList";
 import DomRef from "./components/ref/DomRef";
+import MutableRef from "./components/ref/MutableRef";
 import Counter from "./components/state/Counter";
 import LoggedIn from "./components/state/LoggedIn";
 import User from "./components/state/User";
@@ -80,6 +81,9 @@ const App = () => {
       <hr />
 
       <DomRef />
+      <hr />
+
+      <MutableRef />
     </>
   );
 };
