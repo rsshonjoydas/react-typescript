@@ -1,4 +1,5 @@
 import Button from "./components/Button";
+import Container from "./components/Container";
 import Greet from "./components/Greet";
 import Heading from "./components/Heading";
 import Input from "./components/Input";
@@ -47,6 +48,8 @@ const App = () => {
       />
       <hr />
       <Input handleChange={(event) => console.log(event)} />
+      <hr />
+      <Container styles={{ border: "1px solid cyan", padding: "1rem" }} />
     </>
   );
 };
