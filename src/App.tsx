@@ -8,6 +8,7 @@ import Person from "./components/Person";
 import PersonList from "./components/PersonList";
 import LoggedIn from "./components/state/LoggedIn";
 import User from "./components/state/User";
+import User2 from "./components/state/User2";
 import Status from "./components/Status";
 import "./styles.css";
 
@@ -56,6 +57,8 @@ const App = () => {
       <LoggedIn />
       <hr />
       <User />
+      <hr />
+      <User2 />
     </>
   );
 };
