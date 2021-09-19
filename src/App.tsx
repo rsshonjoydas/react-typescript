@@ -1,4 +1,5 @@
 import Button from "./components/Button";
+import Counter2 from "./components/class/Counter2";
 import Container from "./components/Container";
 import Box from "./components/context/Box";
 import { ThemeContextProvider } from "./components/context/ThemeContext";
@@ -84,6 +85,9 @@ const App = () => {
       <hr />
 
       <MutableRef />
+      <hr />
+
+      <Counter2 message="The message is " />
     </>
   );
 };
