@@ -2,6 +2,8 @@ import Button from "./components/Button";
 import Container from "./components/Container";
 import Box from "./components/context/Box";
 import { ThemeContextProvider } from "./components/context/ThemeContext";
+import User3 from "./components/context/User3";
+import { UserContextProvider } from "./components/context/UserContext";
 import Greet from "./components/Greet";
 import Heading from "./components/Heading";
 import Input from "./components/Input";
@@ -69,6 +71,11 @@ const App = () => {
       <ThemeContextProvider>
         <Box />
       </ThemeContextProvider>
+      <hr />
+
+      <UserContextProvider>
+        <User3 />
+      </UserContextProvider>
     </>
   );
 };
