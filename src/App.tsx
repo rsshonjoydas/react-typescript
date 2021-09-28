@@ -20,6 +20,7 @@ import LoggedIn from "./components/state/LoggedIn";
 import User from "./components/state/User";
 import User2 from "./components/state/User2";
 import Status from "./components/Status";
+import Toast from "./components/templateLiterals/Toast";
 import "./styles.css";
 
 const App = () => {
@@ -103,6 +104,9 @@ const App = () => {
       <hr />
 
       <RandomNumber value={10} isPositive />
+      <hr />
+
+      <Toast position="left-center" />
     </>
   );
 };
