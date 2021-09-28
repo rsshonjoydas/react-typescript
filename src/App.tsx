@@ -5,6 +5,7 @@ import Box from "./components/context/Box";
 import { ThemeContextProvider } from "./components/context/ThemeContext";
 import User3 from "./components/context/User3";
 import { UserContextProvider } from "./components/context/UserContext";
+import List from "./components/generics/List";
 import Greet from "./components/Greet";
 import Heading from "./components/Heading";
 import Input from "./components/Input";
@@ -88,6 +89,16 @@ const App = () => {
       <hr />
 
       <Counter2 message="The message is " />
+      <hr />
+
+      <List
+        items={[
+          { id: 1, first: "Bruce", last: "Wayne" },
+          { id: 2, first: "Clark", last: "Kent" },
+          { id: 3, first: "Princess", last: "Diana" },
+        ]}
+        onClick={(item) => console.log(item)}
+      />
     </>
   );
 };
