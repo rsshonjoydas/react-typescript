@@ -5,7 +5,7 @@ import Box from "./components/context/Box";
 import { ThemeContextProvider } from "./components/context/ThemeContext";
 import User3 from "./components/context/User3";
 import { UserContextProvider } from "./components/context/UserContext";
-import List from "./components/generics/List";
+// import List from "./components/generics/List";
 import Greet from "./components/Greet";
 import Heading from "./components/Heading";
 import Input from "./components/Input";
@@ -14,6 +14,7 @@ import Person from "./components/Person";
 import PersonList from "./components/PersonList";
 import DomRef from "./components/ref/DomRef";
 import MutableRef from "./components/ref/MutableRef";
+import RandomNumber from "./components/restriction/RandomNumber";
 import Counter from "./components/state/Counter";
 import LoggedIn from "./components/state/LoggedIn";
 import User from "./components/state/User";
@@ -91,14 +92,17 @@ const App = () => {
       <Counter2 message="The message is " />
       <hr />
 
-      <List
+      {/* <List
         items={[
           { id: 1, first: "Bruce", last: "Wayne" },
           { id: 2, first: "Clark", last: "Kent" },
           { id: 3, first: "Princess", last: "Diana" },
         ]}
         onClick={(item) => console.log(item)}
-      />
+      /> */}
+      <hr />
+
+      <RandomNumber value={10} isPositive />
     </>
   );
 };
